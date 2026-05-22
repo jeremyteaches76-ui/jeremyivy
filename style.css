@@ -945,8 +945,8 @@ footer {
    ======================================== */
 
 .page-header {
-  padding: 5rem 0;
-  max-width: 800px;
+  padding: 0.5rem 0;
+  max-width: 300px;
 }
 
 .badge {
@@ -959,14 +959,14 @@ footer {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .page-header h1 {
   font-size: clamp(2.5rem, 5vw, 3.75rem);
   line-height: 1.1;
   color: var(--text-variant);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   font-weight: 400;
 }
 
@@ -985,7 +985,7 @@ footer {
   width: 32px;
   height: 2px;
   background: var(--accent);
-  margin-top: 3rem;
+  margin-top: 1.3rem;
 }
 
 .case-study {
