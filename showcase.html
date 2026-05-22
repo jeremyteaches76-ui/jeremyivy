@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Selected Work | Jeremy Ivy</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <base target="_blank" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="brand"><a href="index.html">Jeremy Ivy</a></div>
+          <ul class="nav-links">
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="showcase.html" class="active">Selected Work</a></li>
+            <li><a href="index.html#notes">Notes</a></li>
+            <li><a href="inquiry.html">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <span class="material-symbols-outlined mobile-menu-icon">menu</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <header class="page-header">
+        <div class="badge">Selected Works</div>
+        <h1>Engineering Digital <span>Structure</span></h1>
+        <p class="lead">
+          A curated collection of assessment systems, curriculum architecture,
+          and frontend engineering designed for classrooms that don't need the
+          luxury of fast internet.
+        </p>
+        <div class="accent-bar"></div>
+      </header>
+
+      <!-- Case Study 1: IELTS Evaluator -->
+      <article class="case-study">
+        <div class="case-header">
+          <div>
+            <div class="case-meta">Assessment Technology · In Daily Use</div>
+            <h2 class="case-title">IELTS Speaking Evaluator</h2>
+            <p class="case-summary">
+              A Progressive Web App that lets IELTS evaluators score speaking
+              tests in real time, with a user experience tailored for
+              evaluators. It band-caps and surfaces fluency gaps in real time.
+            </p>
+          </div>
+          <div class="case-image">
+            <img
+              src="https://placehold.co/800x500/f1eee7/3e4a3d?text=IELTS+Evaluator+Interface"
+              alt="IELTS Speaking Evaluator"
+            />
+          </div>
+        </div>
+        <div class="case-body">
+          <h4>The Problem</h4>
+          <p>
+            Teachers conducting IELTS speaking assessments needed a replicable
+            method to score against IELTS criteria rubric in real time, during
+            class, without relying on paper or complex software. The existing
+            tools were either too heavy, too expensive, or required constant
+            connectivity.
+          </p>
+
+          <h4>The Constraint</h4>
+          <p>
+            The tool had to run on teachers' personal devices, work reliably on
+            inconsistent connections, and be immediately intuitive to evaluators
+            who are focused on the student, not the interface.
+          </p>
+
+          <h4>What I Built</h4>
+          <p>
+            A Progressive Web App built in vanilla JavaScript that eases
+            real-time scoring against official IELTS rubrics. The interface
+            surfaces "band-capping alerts"—moments where a student's performance
+            in one criterion (like grammar range) limits their overall band
+            regardless of strengths elsewhere.
+          </p>
+          <ul>
+            <li>Core logic in vanilla JS with zero external dependencies</li>
+            <li>Works offline after initial load</li>
+            <li>
+              Clean, distraction-free UI designed for evaluators under time
+              pressure
+            </li>
+            <li>
+              Progressive Web App: installable for browsers, phones, and tablets
+              without app stores
+            </li>
+          </ul>
+
+          <h4>Why This Way</h4>
+          <p>
+            A framework would add weight and dependencies for a problem that is
+            fundamentally about logic and interface clarity. The scoring
+            algorithm is the product; the UI's job is to get out of the way.
+            Vanilla JS keeps the bundle small, the performance predictable, and
+            the maintenance straightforward. A robust reporting dashboard lets
+            instructors evaluate progress for classes and students, and share
+            that feedback.
+          </p>
+
+          <div class="case-tags">
+            <span class="tag">Vanilla JS</span>
+            <span class="tag">IELTS Rubrics</span>
+            <span class="tag">PWA</span>
+            <span class="tag">Progressive Enhancement</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Case Study 2: Lesson Prepper -->
+      <article class="case-study">
+        <div class="case-header">
+          <div>
+            <div class="case-meta">Teacher Tool · My Daily Driver</div>
+            <h2 class="case-title">Lesson Prepper</h2>
+            <p class="case-summary">
+              One pipeline from raw text to editable PowerPoint. Saves hours per
+              week.
+            </p>
+          </div>
+          <div class="case-image">
+            <img
+              src="https://placehold.co/800x500/f1eee7/3e4a3d?text=Lesson+Prepper"
+              alt="Lesson Prepper interface"
+            />
+          </div>
+        </div>
+        <div class="case-body">
+          <h4>The Problem</h4>
+          <p>
+            Teachers spent hours per lesson manually formatting slides, copying
+            text from PDFs, and adjusting layouts. The existing "digital
+            curriculum" was a patchwork of documents that required constant
+            reformatting.
+          </p>
+
+          <h4>The Constraint</h4>
+          <p>
+            No budget for proprietary LMS. No IT support. Teachers used whatever
+            was on their laptops—mostly old versions of PowerPoint and MS Word,
+            and free Google accounts. The solution had to be affordable,
+            offline-capable, and output something teachers already knew how to
+            use.
+          </p>
+
+          <h4>What I Built</h4>
+          <p>
+            A pipeline that evolved from a Google Gem + Python script into one
+            tool: paste text → get structured lesson plan → customize slide
+            layout → export editable PowerPoint. The AI handles the structure;
+            the teacher handles the pedagogy.
+          </p>
+          <ul>
+            <li>Text ingestion—pasted from anywhere</li>
+            <li>
+              AI-structured lesson plans with objectives, activities, and
+              assessments
+            </li>
+            <li>Customizable slide templates matching school branding</li>
+            <li>
+              Direct, customizable and editable PowerPoint export—no starting
+              from scratch
+            </li>
+          </ul>
+
+          <h4>Why This Way</h4>
+          <p>
+            Teachers need efficiency. They need PowerPoint files that aren't
+            locked down and un-editable—like the slides Notebook LM creates. By
+            exporting to a format they already own, I removed the adoption
+            barrier entirely. The AI is a convenience layer; the PowerPoint is
+            the deliverable.
+          </p>
+
+          <div class="case-tags">
+            <span class="tag">AI Pipeline</span>
+            <span class="tag">PowerPoint Export</span>
+            <span class="tag">Teacher Tool</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Case Study 3: Web Dev Curriculum -->
+      <article class="case-study">
+        <div class="case-header">
+          <div>
+            <div class="case-meta">Curriculum Design</div>
+            <h2 class="case-title">Web Dev Fundamentals</h2>
+            <p class="case-summary">
+              A full 35 week term syllabus teaching HTML5, CSS3, and JavaScript to
+              secondary students or adult learners. Project-based, no prior
+              experience needed.
+            </p>
+          </div>
+          <div class="case-image">
+            <img
+              src="https://placehold.co/800x500/f1eee7/3e4a3d?text=Web+Dev+Curriculum"
+              alt="Web Dev Fundamentals curriculum"
+            />
+          </div>
+        </div>
+        <div class="case-body">
+          <h4>The Problem</h4>
+          <p>
+            Many coding courses start with tools. I start with thinking. Once
+            you understand why code behaves the way it does, any tool becomes
+            easier to use. Logic and causality first. Tools second. Students who
+            understand the 'why' adapt faster.
+          </p>
+
+          <h4>What I Built</h4>
+          <p>
+            A scaffolded curriculum using foundational web methodology. HTML and
+            CSS taught like they matter just as much as JavaScript. The methods
+            behind fundamentals are ingrained. Context is provided alongside
+            syntax, thinking is required. Modules progress from basic index.html
+            and styles.css to DOM manipulation, all in vanilla JS, with the
+            rationale for why and when to use advanced tools baked in.
+          </p>
+          <p>
+            Designed for secondary students or adult learners with no prior
+            experience.
+          </p>
+
+          <h4>Why This Way</h4>
+          <p>
+            Frameworks abstract away the very concepts I want students to see.
+            When a student writes CSS and watches a div change color, they own
+            that causality. The foundational approach lets me introduce
+            complexity only after the underlying model is understood.
+          </p>
+
+          <div class="case-tags">
+            <span class="tag">Curriculum Design</span>
+            <span class="tag">STEM</span>
+            <span class="tag">Vanilla JS</span>
+            <span class="tag">Constructivism</span>
+          </div>
+        </div>
+      </article>
+      <p>If you're working on similar problems, <a href="inquiry.html">get in touch</a>.</p>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div>
+            <div class="footer-brand">Jeremy Ivy</div>
+            <p class="footer-desc">
+              Lightweight tools, classroom truth, no cruft.
+            </p>
+          </div>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="philosophy.html">Philosophy</a>
+            <a href="inquiry.html">Contact</a>
+          </nav>
+          <div class="copyright">&copy; 2026 Jeremy Ivy</div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

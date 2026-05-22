@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Contact | Jeremy Ivy</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+<base target="_blank">
+</head>
+<body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="brand"><a href="index.html">Jeremy Ivy</a></div>
+          <ul class="nav-links">
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="showcase.html">Selected Work</a></li>
+            <li><a href="index.html#notes">Notes</a></li>
+            <li><a href="inquiry.html" class="active">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <span class="material-symbols-outlined mobile-menu-icon">menu</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-hero container">
+        <h1>Get in touch.</h1>
+        <p>
+          I build things that solve real world education and tech problems, and I like talking to people who build things too. If you're working on EdTech, assessment systems, or low-bandwidth tools, I'm open to conversation.
+        </p>
+      </section>
+
+      <section class="contact-form-section container">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+          <p class="hidden">
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group full-width">
+              <label for="subject">What are you working on?</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Select a topic</option>
+                <option value="edtech">EdTech / Assessment Tools</option>
+                <option value="frontend">Frontend / UI Architecture</option>
+                <option value="curriculum">STEM Curriculum Design</option>
+                <option value="other">Something Else</option>
+              </select>
+            </div>
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me what you're building and what you're stuck on." required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send Message</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="direct-email">
+        <div class="container direct-email-inner">
+          <h2>Prefer email?</h2>
+          <a href="mailto:jeremy.ivy@gmail.com" class="email-link">jeremy.ivy@gmail.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div>
+            <div class="footer-brand">Jeremy Ivy</div>
+            <p class="footer-desc">Lightweight tools, classroom truth, no cruft.</p>
+          </div>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="philosophy.html">Philosophy</a>
+            <a href="showcase.html">Selected Work</a>
+          </nav>
+          <div class="copyright">&copy; 2026 Jeremy Ivy</div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

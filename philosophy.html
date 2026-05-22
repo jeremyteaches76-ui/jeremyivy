@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Philosophy | Jeremy Ivy</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <base target="_blank" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="brand"><a href="index.html">Jeremy Ivy</a></div>
+          <ul class="nav-links">
+            <li><a href="philosophy.html" class="active">Philosophy</a></li>
+            <li><a href="showcase.html">Selected Work</a></li>
+            <li><a href="index.html#notes">Notes</a></li>
+            <li><a href="inquiry.html">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <span class="material-symbols-outlined mobile-menu-icon">menu</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="philosophy-hero container">
+        <h1>
+          I don't believe in <span class="italic">best practices.</span> I
+          believe in <span class="italic">context.</span>
+        </h1>
+        <p class="lead">
+          The same tool that saves a San Francisco startup will break a
+          Cambodian classroom. I've spent 20 years learning which abstractions
+          are worth their weight and which ones are just cargo culting. These
+          are the principles I build by.
+        </p>
+      </section>
+
+      <section class="principles container">
+        <!-- Principle 1 -->
+        <article class="principle">
+          <div class="principle-header">
+            <div>
+              <div class="principle-number">01</div>
+              <div class="principle-label">Technology</div>
+            </div>
+            <div>
+              <h3>Vanilla-First Is Not Purism. It's Economics.</h3>
+              <p>
+                I don't avoid frameworks, but I only use them when they are best
+                fit for a solution. , Every kilobyte I ship is weight someone
+                else's device has to carry. In a classroom where students share
+                devices and connections vary, that weight is real.
+              </p>
+              <p>
+                I use them frameworks when the problem is architectural, and
+                avoid them when they're inelegant. If I need component
+                reusability across a large team, React makes sense. If I need a
+                scoring interface that loads fast on a range of devices, vanilla
+                JS is the responsible choice.
+              </p>
+              <ul>
+                <li>
+                  Measure the cost of every dependency in performance and
+                  maintenance
+                </li>
+                <li>
+                  Use frameworks for team scale, not for personal convenience
+                </li>
+                <li>
+                  Progressive enhancement: core functionality works without JS
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Principle 2 -->
+        <article class="principle">
+          <div class="principle-header">
+            <div>
+              <div class="principle-number">02</div>
+              <div class="principle-label">Pedagogy</div>
+            </div>
+            <div>
+              <h3>Computational Thinking Before Syntax</h3>
+              <p>
+                Most ICT curricula teach tools: "This is Scratch. This is HTML."
+                They don't teach thinking. Students finish these courses able to
+                drag blocks or copy tags, but unable to decompose a problem or
+                trace a logical chain.
+              </p>
+              <p>
+                I reverse-engineer from outcomes. What does a student need to
+                think like a programmer? Pattern recognition, abstraction,
+                decomposition, algorithmic thinking. Then I ask: what's the
+                simplest syntax that lets them practice those skills? Usually,
+                it's vanilla JS manipulating the DOM. They see cause and effect
+                immediately.
+              </p>
+              <ul>
+                <li>Every lesson must have a "why" before the "how"</li>
+                <li>
+                  Projects should fail in instructive ways, not mysterious ways
+                </li>
+                <li>
+                  Context is provided alongside syntax; thinking is required
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Principle 3 -->
+        <article class="principle">
+          <div class="principle-header">
+            <div>
+              <div class="principle-number">03</div>
+              <div class="principle-label">Design</div>
+            </div>
+            <div>
+              <h3>Respect the User's Context</h3>
+              <p>
+                A teacher scoring IELTS speaking tests between classes is not a
+                "user." They're a professional with a deadline, working on
+                whatever device is at hand, in a room where the power might cut.
+                Every design decision has to survive that reality.
+              </p>
+              <p>
+                This means large touch targets, offline-first data, clear visual
+                hierarchy, and zero assumptions about screen size or
+                connectivity. The goal is to reduce the teacher's cognitive
+                load, not increase their time-on-app.
+              </p>
+              <ul>
+                <li>
+                  Design for the worst device and connection you can imagine
+                </li>
+                <li>Every interaction should save time, not consume it</li>
+                <li>Accessibility is not a checklist; it's the default</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Principle 4 -->
+        <article class="principle">
+          <div class="principle-header">
+            <div>
+              <div class="principle-number">04</div>
+              <div class="principle-label">AI</div>
+            </div>
+            <div>
+              <h3>AI Is a Reasoning Partner, Not a Replacement</h3>
+              <p>
+                The goal is to use AI as a worker, and not a decision maker. I
+                use AI to enhance my productivity. I let it search and suggest
+                solutions, to get me thinking.</p>
+                <p>I don't let it write code
+                blindly.</p>
+                <p>My AI agents are trained on the coding and design
+                patterns of experts and mentors I trust, and I bake reasoning
+                and standards into my coding agents.
+              </p>
+              <ul>
+                <li>
+                  Every AI-generated solution must be explainable in plain
+                  language
+                </li>
+                <li>Refactor AI output before shipping; never paste blindly</li>
+                <li>Teach people to interrogate AI, not defer to it</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="quote-section">
+        <div class="container">
+          <blockquote>
+            "Language is a process of free creation; its laws and principles are
+            fixed, but the manner in which the principles of generation are used
+            is free and infinitely varied."
+          </blockquote>
+          <cite>— Noam Chomsky</cite>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div>
+            <div class="footer-brand">Jeremy Ivy</div>
+            <p class="footer-desc">
+              Lightweight tools, classroom truth, no cruft.
+            </p>
+          </div>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="showcase.html">Selected Work</a>
+            <a href="inquiry.html">Contact</a>
+          </nav>
+          <div class="copyright">&copy; 2026 Jeremy Ivy</div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

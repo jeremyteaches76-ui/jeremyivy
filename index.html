@@ -1,27 +1,369 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #1b5e20;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: black;
-            font-size: 6rem;
-            margin: 0;
-        }
-    </style>
-</head>
-<body>
-    <h1>Hello</h1>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Jeremy Ivy | Frontend Architect, EdTech Assessment Systems</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <base target="_blank" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="brand">Jeremy Ivy</div>
+          <ul class="nav-links">
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="showcase.html">Selected Work</a></li>
+            <li><a href="#notes">Notes</a></li>
+            <li><a href="inquiry.html">Contact</a></li>
+          </ul>
+          <div class="nav-actions">
+            <span class="material-symbols-outlined mobile-menu-icon">menu</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="container">
+        <div class="hero">
+          <div class="hero-content">
+            <span class="hero-label"
+              >Frontend Architect &amp; ESL Educator</span
+            >
+            <h1>
+              I build assessment and curriculum tools that load fast—even on
+              low-tech devices over 3G.
+            </h1>
+            <p>
+              I'm a frontend architect and ESL teacher working in Cambodia. For
+              two and a half years I've been designing EdTech tools that load
+              fast—even on low-tech devices over 3G. I spent two decades
+              building checkout flows for global retail brands and accessibility
+              systems for healthcare vendors. Now I apply that same discipline
+              to classrooms where every kilobyte matters. The through-line: I
+              care about interfaces that respect the user's context—whether
+              that's a rural student or a senior trying to make crucial health
+              decisions. I work vanilla-first because complexity is a tax, and
+              most classrooms can't afford it.
+            </p>
+            <div class="hero-actions">
+              <a href="#work" class="btn-primary">View Selected Work</a>
+              <a href="#philosophy" class="btn-outline">How I Build</a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+            <div class="hero-image">
+              <img
+                src="https://placehold.co/800x1000/f1eee7/3e4a3d?text=Your+Photo+or+Tool+Collage"
+                alt="Jeremy Ivy"
+              />
+            </div>
+            <div class="hero-decoration"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Philosophy / Pillars -->
+      <section class="pillars" id="philosophy">
+        <div class="container">
+          <div class="section-header">
+            <div class="line"></div>
+            <h2>How I Build</h2>
+          </div>
+          <div class="grid-3">
+            <div class="pillar-card">
+              <h3>Vanilla-First</h3>
+              <p>
+                I start with HTML, CSS, and vanilla JavaScript. I only add a
+                framework when staying vanilla becomes more expensive than
+                adopting one. The tools I make run on old laptops, cheap
+                tablets, and spotty connections.
+              </p>
+            </div>
+            <div class="pillar-card">
+              <h3>AI-Trained, Not AI-Dependent</h3>
+              <p>
+                My AI agents are shaped by the thinking of genuine experts—my
+                personal career mentors and giants in the industry. When I use
+                AI to assist me, it's not allowed to hand me bloated,
+                over-engineered, framework-heavy code.
+              </p>
+            </div>
+            <div class="pillar-card">
+              <h3>Classroom-Tested</h3>
+              <p>
+                Everything educational software I make is tested with real Khmer
+                learners, in real classrooms, under real constraints.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selected Work -->
+      <section class="showcase" id="work">
+        <div class="container">
+          <div class="showcase-top">
+            <div>
+              <span class="showcase-label">Real Tools, Built in Cambodia</span>
+              <h2>Selected Work</h2>
+            </div>
+            <a href="showcase.html" class="view-all-link">View All Projects</a>
+          </div>
+          <div class="grid-3">
+            <!-- IELTS Evaluator -->
+            <div class="project-card">
+              <div class="project-img-container">
+                <img
+                  src="https://placehold.co/600x600/f1eee7/3e4a3d?text=IELTS+Evaluator"
+                  alt="IELTS Speaking Evaluator interface"
+                />
+              </div>
+              <div class="project-info">
+                <span class="project-tag-small">In Daily Use</span>
+                <h4>IELTS Speaking Evaluator</h4>
+                <p class="project-description">
+                  I built a Progressive Web App that allows IELTS evaluators to
+                  conduct speaking assessments in class. It band-caps and
+                  surfaces fluency gaps in real time.
+                </p>
+                <div class="tags">
+                  <span class="tag">Vanilla JS</span>
+                  <span class="tag">IELTS Rubrics</span>
+                  <span class="tag">PWA</span>
+                </div>
+              </div>
+            </div>
+            <!-- Lesson Prepper -->
+            <div class="project-card">
+              <div class="project-img-container">
+                <img
+                  src="https://placehold.co/600x600/f1eee7/3e4a3d?text=Lesson+Prepper"
+                  alt="Lesson Prepper output"
+                />
+              </div>
+              <div class="project-info">
+                <span class="project-tag-small">Used Daily</span>
+                <h4>Lesson Prepper</h4>
+                <p class="project-description">
+                  Evolved from a Google Gem + Python script into one pipeline:
+                  text → structured lesson plan → customizable slide layout →
+                  editable PowerPoint. Saves me 20+ hours of prep time per week.
+                  If you're working on similar issues, ask me about it.
+                </p>
+                <div class="tags">
+                  <span class="tag">AI Pipeline</span>
+                  <span class="tag">PowerPoint Export</span>
+                  <span class="tag">Teacher Tool</span>
+                </div>
+              </div>
+            </div>
+            <!-- Web Dev Curriculum -->
+            <div class="project-card">
+              <div class="project-img-container">
+                <img
+                  src="https://placehold.co/600x600/f1eee7/3e4a3d?text=Web+Dev+Fundamentals"
+                  alt="Curriculum overview"
+                />
+              </div>
+              <div class="project-info">
+                <span class="project-tag-small">Ready to Deploy</span>
+                <h4>Web Dev Fundamentals</h4>
+                <p class="project-description">
+                  A full multi-week syllabus teaching HTML5, CSS3, and
+                  JavaScript to secondary students or adult learners. Written by
+                  someone who worked in front-end before the end of the browser
+                  wars. Project-based, no prior experience needed.
+                </p>
+                <div class="tags">
+                  <span class="tag">Curriculum</span>
+                  <span class="tag">STEM</span>
+                  <span class="tag">Vanilla JS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Notes -->
+      <section class="notes" id="notes">
+        <div class="container">
+          <div class="section-header">
+            <div class="line"></div>
+            <h2>Notes</h2>
+          </div>
+          <div class="grid-3">
+            <div class="note-card">
+              <h3>Why I Teach Fundamentals, Not Frameworks</h3>
+              <p>
+                Students learning to code need to see causality: write a line,
+                watch the div change. Frameworks hide the very concepts I want
+                them to understand. I start with vanilla JS and the DOM.
+              </p>
+              <a href="#">Read</a>
+            </div>
+            <div class="note-card">
+              <h3>The 3G Classroom</h3>
+              <p>
+                "Low-bandwidth" means every dependency you ship is weight
+                someone else's device has to carry. I treat kilobytes like
+                currency.
+              </p>
+              <a href="#">Read</a>
+            </div>
+            <div class="note-card">
+              <h3>From Checkout Flows to IELTS Rubrics</h3>
+              <p>
+                What retail UX taught me about assessment design: the user is
+                always time-constrained, and always one confusing screen away
+                from abandoning the task. The same principles apply.
+              </p>
+              <a href="#">Read</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Now -->
+      <section class="now">
+        <div class="container">
+          <div class="now-content">
+            <span class="now-label">May 2026</span>
+            <h2>What I'm Building Now</h2>
+            <p>
+              Currently working on cracking the code on a Khmer-focused grammar
+              tutoring tool and refining my IELTS evaluator for broader
+              deployment. Digging into how AI-assisted assessment can work
+              offline in low-connectivity classrooms.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Repository / Docs -->
+      <section class="repository" id="docs">
+        <div class="container">
+          <div class="repo-content">
+            <div class="repo-intro">
+              <h2>Documents &amp; Demos</h2>
+              <p>Resume, syllabi, and live tool demos for review.</p>
+            </div>
+            <div class="repo-list">
+              <a href="#" class="repo-item">
+                <div class="repo-item-left">
+                  <span class="material-symbols-outlined repo-item-icon"
+                    >description</span
+                  >
+                  <div>
+                    <h5>CV – Jeremy Ivy</h5>
+                    <p class="repo-item-meta">PDF · Updated 2026</p>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined download-icon"
+                  >download</span
+                >
+              </a>
+              <a href="#" class="repo-item">
+                <div class="repo-item-left">
+                  <span class="material-symbols-outlined repo-item-icon"
+                    >book</span
+                  >
+                  <div>
+                    <h5>Web Dev Fundamentals Syllabus</h5>
+                    <p class="repo-item-meta">PDF · Full curriculum overview</p>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined download-icon"
+                  >download</span
+                >
+              </a>
+              <a href="#" class="repo-item">
+                <div class="repo-item-left">
+                  <span class="material-symbols-outlined repo-item-icon"
+                    >play_circle</span
+                  >
+                  <div>
+                    <h5>IELTS Evaluator Demo</h5>
+                    <p class="repo-item-meta">
+                      Live prototype · Available on request
+                    </p>
+                  </div>
+                </div>
+                <span class="material-symbols-outlined download-icon"
+                  >open_in_new</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="cta" id="contact">
+        <div class="container">
+          <div class="cta-inner">
+            <div class="cta-text">
+              <h2>
+                If you're building
+                <span class="italic"
+                  >EdTech, assessment systems, or low-bandwidth tools</span
+                >, I build things that add value — and I like talking to people
+                who build things too.
+              </h2>
+              <p>
+                I don't sell ideas without proof—I build things that add value,
+                and I like talking to people who build things too.
+              </p>
+              <a href="mailto:jeremy.ivy@gmail.com" class="cta-link">
+                jeremy.ivy@gmail.com
+                <span class="material-symbols-outlined">trending_flat</span>
+              </a>
+            </div>
+            <div class="cta-visuals">
+              <div class="box box-1"></div>
+              <div class="box box-2"></div>
+              <div class="box box-3"></div>
+              <div class="box box-4"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand-side">
+            <div class="footer-brand">Jeremy Ivy</div>
+            <p class="footer-desc">
+              Lightweight tools, classroom truth, no cruft.
+            </p>
+          </div>
+          <nav class="footer-nav">
+            <a href="#">GitHub</a>
+            <a href="mailto:jeremy.ivy@gmail.com">Email</a>
+          </nav>
+          <div class="copyright">
+            &copy; 2026 Jeremy Ivy · Built with vanilla web standards
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
 </html>
