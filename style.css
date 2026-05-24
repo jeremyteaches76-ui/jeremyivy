@@ -295,6 +295,7 @@ footer {
 
 .hero-image-wrapper {
   position: relative;
+   max-width: 260px;
 }
 
 .hero-image {
@@ -1142,7 +1143,7 @@ footer {
   }
 
   .hero-image-wrapper {
-    max-width: 500px;
+    max-width: 260px;
     margin: 0 auto;
   }
 
