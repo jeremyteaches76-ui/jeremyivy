@@ -39,36 +39,13 @@
       </section>
 
       <section class="contact-form-section container">
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thanks.html">
-         <p class="hidden">
-            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-          </p>
-          <div class="form-grid">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div class="form-group full-width">
-              <label for="subject">What are you working on?</label>
-              <select id="subject" name="subject" required>
-                <option value="" disabled selected>Select a topic</option>
-                <option value="edtech">EdTech / Assessment Tools</option>
-                <option value="frontend">Frontend / UI Architecture</option>
-                <option value="curriculum">STEM Curriculum Design</option>
-                <option value="other">Something Else</option>
-              </select>
-            </div>
-            <div class="form-group full-width">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell me what you're building and what you're stuck on." required></textarea>
-            </div>
-            <button type="submit" class="form-submit">Send Message</button>
-          </div>
-        </form>
+       <form method="POST" action="/api/submit">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <input type="text" name="subject" placeholder="Subject" />
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
       </section>
 
       <section class="direct-email">
