@@ -636,9 +636,10 @@ footer {
 
 .cta-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6rem;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .cta-text h2 {
@@ -1156,10 +1157,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .cta-inner {
-    grid-template-columns: 1fr;
-    gap: 4rem;
-  }
 
   .cta-visuals {
     max-width: 600px;
